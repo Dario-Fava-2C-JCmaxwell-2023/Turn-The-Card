@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Turn The Card</title>
 </head>
+
 <body>
-    <img src="retro card.png" onclick="gira()"/>
+    <img src="retro card.png" onclick="gira()" />
 
     <script>
-        let carta=document.querySelector("img")
+        let carta = document.querySelector("img")
         function gira() {
-        carta.src="front card.png"
-    }
-    
-        </script>
+            console.log("gira")
+            if (carta.src.match("retro"))
+                carta.src = "front card.png";
+            else carta.src = "retro card.png";
+        }
+
+    </script>
 </body>
+
 </html>
