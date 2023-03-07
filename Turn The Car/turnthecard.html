@@ -6,21 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turn The Card</title>
+
+
+
+    <style>
+        body {
+            background-color: black;
+        }
+     
+        img{
+            width: 400px;
+        }
+    
+    </style>
 </head>
 
 <body>
-    <img src="retro card.png" onclick="gira()" />
+
+
+
+    <div id="tavoloDaGioco"></div>
+
 
     <script>
+
+        carte = ["front card.png", "dinosauro.elegante.jpeg", "ratorixcard.jpg"]
+
+        tavolo = document.querySelector('#tavoloDaGioco')
+
+        carte.forEach(element => {
+            tavolo.innerHTML += '<img id="' + element + '" src="retro card.png" onclick="gira(this)" />'
+            console.log('<img id="' + element + '" src="retro card.png" />')
+        });
+
         let carta = document.querySelector("img")
-        function gira() {
-            console.log("gira")
-            if (carta.src.match("retro"))
-                carta.src = "front card.png";
-            else carta.src = "retro card.png";
+
+        function gira(carta) {
+            console.log('gira')
+            console.log(carta.src)
+            if (carta.src.includes("retro"))
+                carta.src = carta.id
+            else
+                carta.src = "retro card.png";
+
+
         }
 
     </script>
 </body>
 
-</html>
+</html>s
