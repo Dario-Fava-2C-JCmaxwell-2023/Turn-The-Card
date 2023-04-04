@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn The Card</title>
+
+
+
+    <style>
+
+        img {
+            width: 400px;
+        }
+
+
+
+        .item1 {
+            grid-area: punteggio;
+        }
+
+        .item2 {
+            grid-area: punti-num;
+        }
+
+        .item3 {
+            grid-area: tavoloDaGioco ;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'punteggio punteggio punti-num'
+                'tavoloDaGioco tavoloDaGioco tavoloDaGioco'
+                'tavoloDaGioco tavoloDaGioco tavoloDaGioco';
+            gap: 10px;
+            padding: 10px;
+            background-color: black;
+        }
+
+        .grid-container>div {
+            background-color: rgb(0, 140, 255);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="item1">
+                <div id="punteggio"><h1>Punteggio=</h1></div>
+                </div>
+            
+    
+            <div class="item2">
+                <div id="punti-num"></div>
+            </div>
+            
+            <div class="item3">
+                <div id="tavoloDaGioco"></div>
+            </div>
+    
+    
+        </div>
+    
+    <script>
+        let NcarteGirate = 0
+        let primaCartaGirata = null
+        let carte = ["front card.png", "kirbi.piedi.jpg", "front card.png", "kirbi.piedi.jpg"]
+
+        let tavolo = document.querySelector('#tavoloDaGioco')
+
+        carte.forEach(element => {
+            tavolo.innerHTML += '<img id="' + element + '" src="retro card.png" onclick="gira(this)" />'
+            console.log('<img id="' + element + '" src="retro card.png" />')
+        });
+
+        let carta = document.querySelector("img")
+
+        function gira(carta) {
+            NcarteGirate++
+            carta.src = carta.id
+            console.log(NcarteGirate)
+            if (NcarteGirate == 1)
+                primaCartaGirata = carta
+            else {
+                NcarteGirate = 0
+                if (carta.src == primaCartaGirata.src)
+                    console.log('Bravo +1 punto')
+                else {
+                    console.log('riprovaci')
+
+                    setTimeout(() => {
+                        carta.src = "retro card.png"
+                        primaCartaGirata.src = "retro card.png"
+                    }, 2000)
+
+                }
+            }
+        }
+
+
+    </script>
+
+    
+
+</body>
+
+</html>
