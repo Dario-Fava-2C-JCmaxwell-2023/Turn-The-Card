@@ -10,9 +10,10 @@
 
 
     <style>
+        
         img {
             width: 400px;
-        }
+        } 
 
 
 
@@ -46,6 +47,7 @@
             padding: 20px 0;
             font-size: 30px;
         }
+        /* settaggio del grida area e item*/
     </style>
 </head>
 
@@ -70,12 +72,13 @@
             
         
         </div>
-
+    <!-- div del documento-->
 
 
     </div>
 
     <script>
+        // variabili
         let NcarteGirate = 0
         let primaCartaGirata = null
         let carte = ["front card.png", "kirbi.piedi.jpg", "front card.png", "kirbi.piedi.jpg"]
@@ -91,7 +94,7 @@
 
         let carta = document.querySelector("img")
 
-        function gira(carta) {
+        function gira(carta)  {     //funzione per girare le carte
             NcarteGirate++
             carta.src = carta.id
             console.log(NcarteGirate)
@@ -114,7 +117,7 @@
 
             }
         }
-        npunteggioht.textContent = npunteggio
+        npunteggioht.textContent = npunteggio 
     }
 
 
