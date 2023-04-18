@@ -16,15 +16,15 @@
 
 
 
-        .item1 {
+        .punteggio {
             grid-area: punteggio;
         }
 
-        .ct {
-            grid-area: ct;
+        .npunteggio {
+            grid-area: npunteggio;
         }
 
-        .item3 {
+        .tavoloDaGioco {
             grid-area: tavoloDaGioco;
         }
 
@@ -32,7 +32,7 @@
         .grid-container {
             display: grid;
             grid-template-areas:
-                'punteggio punteggio ct'
+                'punteggio punteggio npunteggio'
                 'tavoloDaGioco tavoloDaGioco tavoloDaGioco'
                 'tavoloDaGioco tavoloDaGioco tavoloDaGioco';
             gap: 10px;
@@ -55,15 +55,20 @@
        
             <div id="punteggio">
                 <h1>Punteggio=</h1>
-         <div class="grid-container">
-            <div class="ct">
-                <div class="container">
-                    <span id="ctht" class="ctht">0</span>
+         </div>
+            
+         <div class="npunteggio"></div>
+                
+         <div class="container">
+                    <span id="npunteggioht" class="npunteggioht">0</span>
                 </div>
-            </div>
-            <div class="carte">
-                <div id="tavoloDaGioco"></div>
-            </div>
+            
+            
+            <div class="carte"></div>
+                
+            <div id="tavoloDaGioco"></div>
+            
+        
         </div>
 
 
@@ -76,8 +81,8 @@
         let carte = ["front card.png", "kirbi.piedi.jpg", "front card.png", "kirbi.piedi.jpg"]
 
         let tavolo = document.querySelector('#tavoloDaGioco')
-        let ctht = document.getElementById("ctht");
-        let ct = 0;
+        let npunteggioht = document.getElementById("npunteggioht");
+        let npunteggio = 0;
         
         carte.forEach(element => {
             tavolo.innerHTML += '<img id="' + element + '" src="retro card.png" onclick="gira(this)" />'
@@ -97,8 +102,8 @@
 
                 if (carta.src == primaCartaGirata.src){
                     console.log('Bravo +1 punto')
-                ct++;
-                ctht.textContent = ct;
+                npunteggio++;
+                npunteggioht.textContent = npunteggio;
             } else {
                 console.log('riprovaci')
 
@@ -109,7 +114,8 @@
 
             }
         }
-        }
+        npunteggioht.textContent = npunteggio
+    }
 
 
     </script>
