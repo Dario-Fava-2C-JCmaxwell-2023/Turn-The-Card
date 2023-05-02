@@ -9,8 +9,11 @@ Positions: in the upper left of the screen you will find the words "punteggio=" 
 How to PLAY:
 
 1- Try for the first turn some cards , memorize equal cards
+
 2- Select the equal cards for complete the game
+
 3- Achieve the highest score
+
 4- Have fun!
 
 
