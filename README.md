@@ -7,4 +7,4 @@ Questo gioco è conosciuto come "memory" sono presenti per adesso 4 carte, lo sc
 Posizioni: in alto a sinistra della schermata si trovera la scritta Punteggio= , in alto a destra il punteggio e tutto lo spazio restante sotto è occupato dalle carte
 
 
-Link per giocare : https://dario-fava-2c-jcmaxwell-2023.github.io/Turn-The-Card/
+##Link per giocare : https://dario-fava-2c-jcmaxwell-2023.github.io/Turn-The-Card/
