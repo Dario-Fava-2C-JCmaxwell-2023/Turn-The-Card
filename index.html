@@ -87,6 +87,10 @@
         let npunteggioht = document.getElementById("npunteggioht");
         let npunteggio = 0;
         
+        
+        //randomizer
+        carte.sort(() => Math.random() - 0.5);
+
         carte.forEach(element => {
             tavolo.innerHTML += '<img id="' + element + '" src="retro card.png" onclick="gira(this)" />'
             console.log('<img id="' + element + '" src="retro card.png" />')
