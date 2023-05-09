@@ -10,17 +10,21 @@ How to PLAY:
 
 1- Try for the first turn some cards , memorize equal cards
 
-![schermata principale](https://user-images.githubusercontent.com/101812397/235657543-716a2ae3-ad57-44d7-8239-3e8e4af644df.PNG)
+![1](https://github.com/Dario-Fava-2C-JCmaxwell-2023/Turn-The-Card/assets/101812397/2e0ca0ca-0794-4852-a7e6-df29b32bac2a)
 
 2- Select the equal cards for complete the game
 
-![aggiunta punteggio](https://user-images.githubusercontent.com/101812397/235657604-76ea5a11-d5da-49cb-b078-291c7056f71e.png)
+![2](https://github.com/Dario-Fava-2C-JCmaxwell-2023/Turn-The-Card/assets/101812397/dfe0c897-9200-4f89-adfe-c4982c1f4c00)
 
 3- Achieve the highest score
 
-![aggiunta punteggio finale](https://user-images.githubusercontent.com/101812397/235657642-d34f0c26-68ec-4298-85e5-014b7f9d1489.png)
+![3](https://github.com/Dario-Fava-2C-JCmaxwell-2023/Turn-The-Card/assets/101812397/01c4b2cc-f32b-458f-8f76-33ce302d09c4)
 
 4- Have fun!
+
+ULTIMATE NEWS: 
+
+Randomizer cards!!
 
 
 ## For Play The GAME : [Click Me](https://dario-fava-2c-jcmaxwell-2023.github.io/Turn-The-Card/).
