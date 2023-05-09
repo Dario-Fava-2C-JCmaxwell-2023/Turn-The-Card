@@ -22,7 +22,7 @@ How to PLAY:
 
 4- Have fun!
 
-ULTIMATE NEWS: 
+ULTIMATE NEWS : 
 
 Randomizer cards!!
 
